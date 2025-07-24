@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Guddu 🎂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #fff0f5, #ffe4e1);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+      color: #4a0072;
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5em;
+      color: #ff4081;
+    }
+    .cake {
+      margin-top: 40px;
+    }
+    .cake img {
+      width: 250px;
+      animation: float 2s infinite ease-in-out;
+      cursor: pointer;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .button {
+      margin-top: 20px;
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy 17th Birthday Guddu! 🎉</h1>
+  <p>Tap the cake to blow out the candles and make a wish!</p>
+  <div class="cake">
+    <img src="cake17.gif" alt="Birthday Cake with 17 Candles" onclick="blowCandles()">
+  </div>
+  <button class="button" onclick="blowCandles()">Blow Candles 🎂</button>
+
+  <script>
+    function blowCandles() {
+      alert("💨 Candles blown! Cake piece is served to you, my love 💖");
+    }
+  </script>
+</body>
+</html>
